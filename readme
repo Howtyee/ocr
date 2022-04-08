@@ -1,0 +1,4 @@
+1.安装tesseract 4.0.0
+2.安装pytesseract接口
+3.安装tesseract中文识别库 解压放入Tesseract-OCR\tessdata下
+4.通过pytesseract.pytesseract.tesseract_cmd调用接口

@@ -4,6 +4,7 @@ import re
 import os
 import colorsys
 import PIL.Image as Image
+#识别健康码主要颜色以判断是否为绿码
 def get_dominant_color(image):
     max_score = 0.0001
     dominant_color = None
@@ -41,7 +42,7 @@ for line in text:
     if hsres:
         hsresend = hsres[0]
 
-print("第一张图上方时间:",now_time[0],now_time[-1])
+print("现在时间:",now_time[0],now_time[-1])
 print("核酸时间:",hsresend)
 if "阴" in textall:
     print("核酸结果:阴性")
